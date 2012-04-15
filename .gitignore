@@ -1,0 +1,15 @@
+
+*.o
+*.crf
+*.d
+*.axf
+*.hex
+*.dep
+*.lnp
+*.map
+S64TESTER.htm
+*.Opt
+*.plg
+*.tra
+*.lst
+*.sct

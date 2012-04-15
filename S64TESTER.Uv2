@@ -1,0 +1,105 @@
+### uVision2 Project, (C) Keil Software
+### Do not modify !
+
+Target (Target 1), 0x0004 // Tools: 'ARM-ADS'
+
+Group (Source Group 1)
+
+File 1,2,<.\SAM7.s><SAM7.s>
+File 1,1,<.\main.c><main.c>
+File 1,1,<.\enc\ENC_main.c><ENC_main.c>
+File 1,1,<.\enc\enc28j60.c><enc28j60.c>
+File 1,1,<.\enc\ip_arp_udp_tcp.c><ip_arp_udp_tcp.c>
+File 1,1,<.\enc\simple_server.c><simple_server.c>
+
+
+Options 1,0,0  // Target 'Target 1'
+ Device (AT91SAM7S64)
+ Vendor (Atmel)
+ Cpu (IRAM(0x200000-0x203FFF) IROM(0x100000-0x10FFFF) CLOCK(20000000) CPUTYPE(ARM7TDMI))
+ FlashUt ()
+ StupF ("STARTUP\Atmel\SAM7.s" ("Atmel AT91SAM7 Startup Code"))
+ FlashDR (UL2ARM(-U44045500 -O15 -S0 -C0 -D00(3F0F0F0F) -L00(4) -FO6 -FD200000 -FC800 -FN1 -FF0AT91SAM7_64 -FS0100000 -FL010000))
+ DevID (3815)
+ Rgf (AT91SAM7S64.H)
+ Mem ()
+ C ()
+ A ()
+ RL ()
+ OH ()
+ DBC_IFX ()
+ DBC_CMS ()
+ DBC_AMS ()
+ DBC_LMS ()
+ UseEnv=0
+ EnvBin ()
+ EnvInc ()
+ EnvLib ()
+ EnvReg (ÿAtmel\SAM7S\)
+ OrgReg (ÿAtmel\SAM7S\)
+ TgStat=16
+ OutDir (.\)
+ OutName (S64TESTER)
+ GenApp=1
+ GenLib=0
+ GenHex=1
+ Debug=1
+ Browse=1
+ LstDir (.\)
+ HexSel=1
+ MG32K=0
+ TGMORE=0
+ RunUsr 0 0 <>
+ RunUsr 1 0 <>
+ BrunUsr 0 0 <>
+ BrunUsr 1 0 <>
+ CrunUsr 0 0 <>
+ CrunUsr 1 0 <>
+ SVCSID <>
+ GLFLAGS=1790
+ ADSFLGA { 243,31,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
+ ACPUTYP (ARM7TDMI)
+ RVDEV ()
+ ADSTFLGA { 0,12,0,2,99,0,0,66,0,0,0,0,0,0,0,0,0,0,0,0 }
+ OCMADSOCM { 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
+ OCMADSIRAM { 0,0,0,32,0,0,64,0,0 }
+ OCMADSIROM { 1,0,0,16,0,0,0,1,0 }
+ OCMADSXRAM { 0,0,0,0,0,0,0,0,0 }
+ OCR_RVCT { 1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,16,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,32,0,0,64,0,0,0,0,0,0,0,0,0,0,0 }
+ RV_STAVEC ()
+ ADSCCFLG { 5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
+ ADSCMISC ()
+ ADSCDEFN ()
+ ADSCUDEF ()
+ ADSCINCD (D:\Keil\ARM\INC)
+ ADSASFLG { 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
+ ADSAMISC ()
+ ADSADEFN ()
+ ADSAUDEF ()
+ ADSAINCD ()
+ PropFld { 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
+ IncBld=1
+ AlwaysBuild=0
+ GenAsm=0
+ AsmAsm=0
+ PublicsOnly=0
+ StopCode=3
+ CustArgs ()
+ LibMods ()
+ ADSLDFG { 17,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
+ ADSLDTA (0x00100000)
+ ADSLDDA (0x00200000)
+ ADSLDSC ()
+ ADSLDIB ()
+ ADSLDIC ()
+ ADSLDMC ()
+ ADSLDIF ()
+ ADSLDDW ()
+  OPTDL (SARM.DLL)(-cAT91SAM7S)(DARMATS.DLL)(-p91SAM7S64)(SARM.DLL)()(TARMATS.DLL)(-p91SAM7S64)
+  OPTDBG 49150,9,()()()()()()()()()() (H-JTAG\HJARM.dll)()()()
+ FLASH1 { 9,0,0,0,100,0,0,0,7,16,0,0,0,0,0,0,0,0,0,0 }
+ FLASH2 (H-JTAG\HJARM.dll)
+ FLASH3 ("" ())
+ FLASH4 ()
+EndOpt
+
